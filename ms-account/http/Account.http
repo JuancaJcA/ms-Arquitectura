@@ -1,0 +1,4 @@
+### Get port
+GET http://localhost:6060/accounts/test
+### Get account
+GET http://localhost:6060/accounts/list

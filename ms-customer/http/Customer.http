@@ -1,0 +1,8 @@
+### Get port
+GET http://localhost:7070/customers/test
+### Get account
+GET http://localhost:7070/customers/list
+### Get key
+GET http://localhost:7070/customers/key?grant_type=client_credentials?client_id=backend?client_secret=B7CqOW2LLx83ejsoA9eh0H2kUaFcWaaX
+### Get token
+GET http://localhost:7070/customers/key

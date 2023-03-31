@@ -1,0 +1,11 @@
+### CUSTOMER
+GET http://localhost:7070/customers/test
+
+### ACCOUNT
+GET http://localhost:6060/accounts/test
+
+### CUSTOMER BY GATEWAY
+GET http://localhost:8282/ms-customer/customers/test
+
+### ACCOUNT BY GATEWAY
+GET http://localhost:8282/ms-account/accounts/list
