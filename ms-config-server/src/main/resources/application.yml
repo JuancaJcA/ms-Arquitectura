@@ -1,3 +1,60 @@
 server:
   port: 8888
 
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #uri: https://github.com/JuancaJcA/server-config.git
+          default-label: main
+          uri: git@github.com:JuancaJcA/server-config.git
+          ignore-local-ssh-settings: true
+          hostKey: AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcLrqPEiiphnt+VTTvDP6mHBL9j1aNUkY4Ue1gvwnGLVlOhGeYrnZaMgRK6+PKCUXaDbC7qtbW8gIkhL7aGCsOr/C56SJMy/BCZfxd1nWzAOxSDPgVsmerOBYfNqltV9/hWCqBywINIR+5dIg6JTJ72pcEpEjcYgXkE2YEFXV1JHnsKgbLWNlhScqb2UmyRkQyytRLtL+38TGxkxCflmO+5Z8CSSNY7GidjMIZ7Q4zMjA2n1nGrlTDkzwDCsw+wqFPGQA179cnfGWOWRVruj16z6XyvxvjJwbz0wQZ75XK5tKSb7FNyeIEs4TT4jk+S4dhPeAUC5y+bDYirYgM4GC7uEnztnZyaVWQ7B381AK4Qdrwt51ZqExKbQpTUNn+EjqoTwvqNj4kqx5QUCI0ThS/YkOxJCXmPUWZbhjpCg56i+2aB6CmK2JGhn57K5mj0MNdBXA4/WnwH6XoPWJzK5Nyu2zB3nAZp+S5hpQs+p1vN1/wsjk=
+          hostKeyAlgorithm: ssh-rsa
+          privateKey: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
+            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+            NhAAAAAwEAAQAAAYEAssraPR/hl0+z8xtaknnpRiqH5k1bATQMaQR+PcrEbm5yiGd/ntVR
+            q9RuiEVqltZDIrivGaLd1w1Mluv2ZBtqW5wExphA86fZvOuxyO4vrRH86IZvR/Jp87ggVv
+            M1FeXdL3/WZZL6ExFpayd3J/lwPHcFzEXnfFn30t25+qPryCv3xVf+EpK30wWQ+zwHxvSG
+            z70W4fymbqAFAw1JROuzq35LJrk7s7idheAtOEiUIWAgluHR0DNDQQRLOn9QyC31axVpph
+            jOXbNUJfcaT16Ni2Cs3FordHC12FTh7YPj7ZQ9Bz6o8hWwkqY44UJjlRA1OAs2BDGhlUcO
+            55s9/bgnjm1qwPIG3TN/XetCYoY2Y2RoVRlBbyqXUlVj+i8F8Fd0vXA1h6Is1Eu5mw7QNu
+            dQPSDpxVQWDDXDMj7j2wMXAynzjYWWDa+3PKdD9DB5Y9iCUlS2RoFKsCeO1bLCqBPu07HP
+            UmzmgnTJa8oBUerupux0wQBcY+FTsxeh2OveR8r/AAAFiCEG7yIhBu8iAAAAB3NzaC1yc2
+            EAAAGBALLK2j0f4ZdPs/MbWpJ56UYqh+ZNWwE0DGkEfj3KxG5ucohnf57VUavUbohFapbW
+            QyK4rxmi3dcNTJbr9mQbalucBMaYQPOn2bzrscjuL60R/OiGb0fyafO4IFbzNRXl3S9/1m
+            WS+hMRaWsndyf5cDx3BcxF53xZ99Ldufqj68gr98VX/hKSt9MFkPs8B8b0hs+9FuH8pm6g
+            BQMNSUTrs6t+Sya5O7O4nYXgLThIlCFgIJbh0dAzQ0EESzp/UMgt9WsVaaYYzl2zVCX3Gk
+            9ejYtgrNxaK3RwtdhU4e2D4+2UPQc+qPIVsJKmOOFCY5UQNTgLNgQxoZVHDuebPf24J45t
+            asDyBt0zf13rQmKGNmNkaFUZQW8ql1JVY/ovBfBXdL1wNYeiLNRLuZsO0DbnUD0g6cVUFg
+            w1wzI+49sDFwMp842Flg2vtzynQ/QweWPYglJUtkaBSrAnjtWywqgT7tOxz1Js5oJ0yWvK
+            AVHq7qbsdMEAXGPhU7MXodjr3kfK/wAAAAMBAAEAAAGABIkD8CwwdL4fOm0MALTG9HJJVp
+            yWHZNMahckr9Ys4jNuN4RbxsbY3Rr0xgNWXAa88GyId7k1F13NZSanIVlXFIVooAD/5Mfx
+            /5c0jOKkPI4J2q9OTOznplIzv82uuXETPNk2GKCzZzhrcorI78kMAWMJ6pyU7dQtme1Pgm
+            QWEjj+fl41CHn537umA2yj/3ZeCEPFPAZEn0zzBsv94WZ5MEIL3F4AF0osWyQzAXJ8QqLf
+            MMFmdd/wnMpj5IZf1Jp8MrqoXZKNt81OHYMJ03z61daIgNxperuy6nSQnk43E5tUZXUzGE
+            1inwW0P5ZAD5PLOw4eDKbfWmH/4wlwyxIZYv51ujSdgQxWWJXMwBLQI8On2cNaKejH5qjH
+            a3ogedDd++aZMZWdCICSjfeQ/neNZ26kZbL4G5gDdSaAsq0ABZAf+AtuLqFKhVjfQGtTDG
+            4e0zdnrdZubUGSE/6BGJjiokA5pAb+WmiDB2CuR6WZXPm/TzxlIo2JV+fTWYI9fAOBAAAA
+            wH/GV2GJ2L5ingkpTC1wOmcaai8XqP0GXJfhUQeR4XoAO3I41RrBG/xlNVL3EK87lEmnKE
+            +UxGEcTbqyjKuv5tNwEpx/1f+AiNn0LpNv5ZGLO1Mg7rXdwMCJ/DQuOpaSmHY++bz1r+qb
+            3Em6bMCoFI9cBy5HeU/PC3svNi5UoJ/SJ8XEa2oxhj3MuC0Ibb9Yn8ZHSKPX0Y5aQMoEm+
+            3hhgezAN3itAiSeXlomZmP7+bJKU4NVfTJt/TcT8PQ+ngOAQAAAMEAykqTmrwvpZlW4Roj
+            KEyoVG2zqbTgF/U3EsmfTzhEX0s45n1PnZhwZfV71yW6DtZUrONHtIZajRCDa4nzEeAnXT
+            muDcNmIrP05vQxTOETQqjSH/6mH9VWYFkjELh7VuR7JIktdfYz8nUTxNkO1T1Ro/kiRT6w
+            mTpfuIBT4tNONvnfMHuTNvsQt2YQA65hH7SiSWjsTigWSB5t8Upm3TUBqoLqfd6Q7AtA5l
+            1sFNYJJVRAWugcolLvd+lC6v/i0TZ3AAAAwQDiQxdNcBIo+clW6xyVowgDvEihAs8QyD0F
+            7pM9JpMzvFOXRRU31YBL7pJWmeIJNIRTBIbkt3kaPNkPspTiCRXUVh7oScaKKx9EEB27SX
+            JwOazHtLxBU/1GJXNCaxdrqPcjaFdg8mgMVwoYp793gjjnIYXI3c2luEUdC8SD/5G0Q+yr
+            HUGY8VTtsdWejl+Cyi4uZguwM1fPxD3ZOvpcLsCS7/UtKLN+McA49uwqAUauNH7nX0aSFY
+            2GpKE/2SpMybkAAAANanVhbmNhQGp1YW5jYQECAwQFBg==
+            -----END OPENSSH PRIVATE KEY-----
+
+
+application:
+    name: ms-config-server
+
+encrypt:
+  key: SDHIOHDAW684D86A4DA6DQdwd684de68DQ
